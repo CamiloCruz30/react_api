@@ -1,13 +1,30 @@
+.main-container{
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
 .grid-card {
-  margin: 15px;
+  margin: 30px;
 }
 
 .title {
-  padding: 30px;
+  padding-top: 20px;
   font-size: 35px;
   text-align: center;
 }
 
 .content-select {
-  margin: 0px 30px 15px 30px;
+  padding: 40px 30px 15px 30px;
+}
+
+.title-weather {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.title-news {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
 }
