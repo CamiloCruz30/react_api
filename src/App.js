@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import News from "./components/News";
+import "./app.css";
+
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -45,13 +49,22 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Test</h1>
-      <div style={{ width: "200px" }}>
-        <Select options={options} onChange={handleChange} />
-      </div>
-      <News news={news} />
-    </div>
+    <Container>
+      <Box sx={{ bgcolor: "#cfe8fc", height: "100%" }}>
+        <h1 className="title">Test React-API</h1>
+        <div className="content-select">
+          <p>
+            Seleccione una ciudad para buscar las noticias y su estado del
+            tiempo.
+          </p>
+          <div style={{ width: "200px" }}>
+            <Select options={options} onChange={handleChange} />
+          </div>
+        </div>
+
+        <News news={news} />
+      </Box>
+    </Container>
   );
 }
 

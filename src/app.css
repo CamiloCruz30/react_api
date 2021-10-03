@@ -1,0 +1,13 @@
+.grid-card {
+  margin: 15px;
+}
+
+.title {
+  padding: 30px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.content-select {
+  margin: 0px 30px 15px 30px;
+}
